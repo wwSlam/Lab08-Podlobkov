@@ -23,7 +23,6 @@
 // Console.WriteLine("Вводи завершён");
 // Console.WriteLine($"Количество введёных оценок: {score}");
 
-// using System.Runtime.Intrinsics.Arm;
 
 // int sum = 0;
 // int count = 0;
@@ -36,11 +35,12 @@
 // {
 //     sum += grade;
 //     count++;
-//     grade = int.Parse(Console.ReadLine());
 //     if (grade > max)
 //     {
 //         max = grade;
 //     }
+
+//     grade = int.Parse(Console.ReadLine());
 // }
 
 // if (count > 0)
@@ -49,13 +49,14 @@
 // }
 // else
 // {
-//     System.Console.WriteLine("Оценок не было введено");
+//     Console.WriteLine("Оценок не было введено");
 // }
+
 // Console.WriteLine($"Максимальный балл: {max}");
 
 
 // string correctPassword = "qwerty123";
-// int count = 0;
+// int countt = 0;
 
 // while (true)
 // {
@@ -68,9 +69,9 @@
 //         break;
 //     }
 //     System.Console.WriteLine("Неверный пароль, попробуйте снова");
-//     count++;
+//     countt++;
 // }
-// Console.WriteLine($"неудачных попыток было: {count}");
+// Console.WriteLine($"неудачных попыток было: {countt}");
 
 // string answer;
 
@@ -136,45 +137,45 @@
 // Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
 
 
-// Console.WriteLine();
-// Console.WriteLine("Индивидуальное задание номер 2");
+Console.WriteLine();
+Console.WriteLine("Индивидуальное задание номер 2");
 
-// int summ = 0;
+int summ = 0;
 
-// while (true)
-// {
-//     Console.Write("Введите число(чтобы остановить введите 0): ");
-//     string str = Console.ReadLine();
-//     if (str == "0")
-//     {
-//         break;
-//     }
-//     if (int.TryParse(str, out int num))
-//     {
-//         if (num < 0)
-//         {
-//             continue;
-//         }
-//         if (num > 0)
-//         {
-//             summ += num;
-//         }
-//     }
-// }
-// System.Console.WriteLine($"{summ}");
+while (true)
+{
+    Console.Write("Введите число(чтобы остановить введите 0): ");
+    string str = Console.ReadLine();
+    if (str == "0")
+    {
+        break;
+    }
+    if (int.TryParse(str, out int num))
+    {
+        if (num < 0)
+        {
+            continue;
+        }
+        if (num > 0)
+        {
+            summ += num;
+        }
+    }
+}
+System.Console.WriteLine($"{summ}");
 
 System.Console.WriteLine();
 System.Console.WriteLine("Задание 9. Самостоятельная работа");
 
 Console.Write("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int total = 0;
+int nUm = int.Parse(Console.ReadLine());
+int totall = 0;
 int i = 2;
 
-while (i <= num) 
+while (i <= nUm) 
 {
-     total += i;
+     totall += i;
      i += 2;           
 }
 
-Console.WriteLine($"Сумма чётных чисел от 1 до {num} = {total}");
+Console.WriteLine($"Сумма чётных чисел от 1 до {nUm} = {totall}");
